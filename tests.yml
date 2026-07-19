@@ -1,5 +1,5 @@
 repo_owner: linfir21
-kittygram_domain: https://kittygram.example.com
-taski_domain: https://taski.example.com
+kittygram_domain: http://158.160.142.89
+taski_domain: http://158.160.142.89
 dockerhub_username: linfir21
-vm_name: your-vm-name
+vm_name: r-backend-vm-280981980
