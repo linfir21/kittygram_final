@@ -1,12 +1,11 @@
-FROM python:3.12
+FROM node:18
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt --no-cache-dir
+COPY package.json package.json
+COPY package-lock.json package-lock.json
+
+RUN npm ci
 
 COPY . .
-
-RUN python manage.py collectstatic --noinput
-
-CMD ["gunicorn", "kittygram_backend.wsgi:application", "--bind", "0.0.0.0:8000"]
+RUN npm run build
