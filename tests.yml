@@ -1,5 +1,5 @@
 repo_owner: linfir21
-kittygram_domain: http://158.160.142.89
-taski_domain: http://158.160.142.89
+kittygram_domain: https://linfir-kittygram.ddns.net
+taski_domain: https://linfir.duckdns.org
 dockerhub_username: linfir21
 vm_name: r-backend-vm-280981980
